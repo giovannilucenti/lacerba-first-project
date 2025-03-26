@@ -10,5 +10,8 @@
     "lacerba"
   ],
   "author": "Giovanni Lucenti",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "url": "https://github.com/giovannilucenti/lacerba-first-project"
+  }
 }
