@@ -1,19 +1,12 @@
-console.log("Hello world!");
-console.log("This is my first Node Project!");
+function hello(name: string, lang: "en" | "it" | "es"): string {
+    const greetMap = {
+        "en": "Hello",
+        "it": "Ciao",
+        "es": "Hola"
+    }
+    const greetingWord = greetMap[lang];
 
-let myVar: number = 3;
-myVar += 10;
-console.log(myVar);
-
-interface MyInterface {
-    myNumber: number;
-    myString: string;
+    return `${greetingWord} ${name}!`;
 }
 
-let myInterface: MyInterface = {
-    myNumber: 10,
-    myString: "Hello World!"
-};
-
-console.log(myInterface.myNumber);
-console.log(myInterface.myString);
+console.log(hello("Giovanni", "es"));
