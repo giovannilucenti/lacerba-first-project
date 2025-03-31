@@ -1,3 +1,5 @@
+import { faker } from "@faker-js/faker"
+
 function hello(name: string, lang: "en" | "it" | "es"): string {
     const greetMap = {
         "en": "Hello",
@@ -9,4 +11,4 @@ function hello(name: string, lang: "en" | "it" | "es"): string {
     return `${greetingWord} ${name}!`;
 }
 
-console.log(hello("Giovanni", "es"));
+console.log(faker.person.fullName());

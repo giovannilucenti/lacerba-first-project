@@ -13,5 +13,8 @@
   "license": "ISC",
   "repository": {
     "url": "https://github.com/giovannilucenti/lacerba-first-project"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^9.6.0"
   }
 }
